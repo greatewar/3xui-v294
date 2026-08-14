@@ -856,6 +856,7 @@ install_x-ui() {
     chmod +x /usr/bin/x-ui
     mkdir -p /var/log/x-ui
     config_after_install
+    cd ${xui_folder}
 
     # Etckeeper compatibility
     if [ -d "/etc/.git" ]; then
